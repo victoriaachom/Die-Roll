@@ -1,6 +1,12 @@
 import problems as prb
 import algorithms as alg
 
+num_games = 1000
+
+# Random vs. Random
+wins_random = 0
+ties_random = 0
+losses_random = 0
 comps = [0, 1]
 
 if 0 in comps:

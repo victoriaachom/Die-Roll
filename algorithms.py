@@ -21,9 +21,12 @@ class MinimaxAgent:
 
     def getMove(self, prob):
         if prob.rolls_made == 1:
-            prob.player_rolls[1] = random.randint(1,6) + 1
-            if prob.player_rolls[1] > 6:
-                prob.player_rolls[1] = 6
+            # Simulate Minimax prediction (simplified for demonstration)
+            predicted_roll = random.randint(1, 6) + 1
+            if predicted_roll > 6:
+                predicted_roll = 6
+            print(f"Minimax Agent predicted roll: {predicted_roll}")
+            prob.player_rolls[1] = predicted_roll
         return None
 
 class QLearningAgent:
