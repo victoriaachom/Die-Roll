@@ -32,7 +32,7 @@ class MinimaxAgent:
 class QLearningAgent:
     def __init__(self, learn_rate=0.1, disc_factor=0.9, exp_rate=1.0):
         self.learn_rate = learn_rate
-        self.disct_factor = disc_factor
+        self.disc_factor = disc_factor
         self.exp_rate = exp_rate
         self.q_table = {}
 
@@ -50,6 +50,9 @@ class QLearningAgent:
             roll = self.q_table[state].index(max(self.q_table[state])) + 1
 
         prob.player_rolls[prob.current_player] = roll
+
+        print(f"Q-Learning Agent Q-values: {self.q_table[state]}, Rolled: {roll}")
+        prob.player_rolls[prob.curr_player] = roll
 
         if prob.rolls_made == 1:
             reward = prob.getWinner()
