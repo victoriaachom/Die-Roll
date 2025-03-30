@@ -4,5 +4,10 @@ import algorithms as alg
 
 print("demo.py is running! ")
 
-demoGame = prb.Game(prb.DieRollGame(), alg.RuleBasedAgent(), alg.RandomAgent())
+# Run with Minimax
+print("\n--- Minimax vs. Random ---")
+demoGame = prb.Game(prb.DieRollGame(), alg.MinimaxAgent(), alg.RandomAgent())
 demoGame.playGame()
+
+#demoGame = prb.Game(prb.DieRollGame(), alg.RuleBasedAgent(), alg.RandomAgent())
+#demoGame.playGame()
