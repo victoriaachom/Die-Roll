@@ -39,7 +39,7 @@ class QLearningAgent:
     def __str__(self):
         return "Q-Learning Agent"
 
-    def getNextMove(self, probm):
+    def getNextMove(self, prob):
         state = str(prob.rolls_made)
         if state not in self.q_table:
             self.q_table[state] = [0] * 6
