@@ -21,7 +21,7 @@ class MinimaxAgent:
 
     def getMove(self, prob):
         if prob.rolls_made == 1:
-            # Simulate Minimax prediction (simplified for demonstration)
+            # Simulate Minimax prediction 
             predicted_roll = random.randint(1, 6) + 1
             if predicted_roll > 6:
                 predicted_roll = 6

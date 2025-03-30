@@ -36,7 +36,7 @@ for _ in range(num_games):
         ties_rule += 1
     agent_rule.update_results(winner)  
 print(f"Rule vs. Random - Wins: {wins_rule}, Losses: {losses_rule}, Ties: {ties_rule}")
-print(f"Rule based agent total wins: {agent_rule.wins}, losses: {agent_rule.losses}, ties: {agent_rule.ties}") # Assuming you have these attributes in RuleBasedAgent
+print(f"Rule based agent total wins: {agent_rule.wins}, losses: {agent_rule.losses}, ties: {agent_rule.ties}") 
 
 # Minimax vs. Random
 wins_minimax = 0
